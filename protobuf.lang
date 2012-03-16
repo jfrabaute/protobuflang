@@ -1,0 +1,38 @@
+# Protobuf language definition file
+#
+# Quickly hacked from the C/C++ syntax definition
+#
+# Author: Jean-Fabrice Rabaute
+#   Mail: jfr@core-services.fr
+#   Date: 13.03.2012
+# ------------------------------------------
+#
+$DESCRIPTION=Protobuf
+
+$KEYWORDS(kwa)=syntax import option package message group optional required repeated default extend extensions to max service rpc returns
+
+$KEYWORDS(kwb)=int32 int64 uint32 uint64 sint32 sint64 fixed32 fixed64 sfixed32 sfixed64 float double bool string bytes enum
+
+$KEYWORDS(kwc)=true false
+
+$KEYWORDS(kwd)=regex((\w+)\s*\()
+
+$STRINGDELIMITERS=" '
+
+$SL_COMMENT=//
+
+$ML_COMMENT=/* */
+
+$ALLOWNESTEDCOMMENTS=false
+
+$IGNORECASE=false
+
+$DIRECTIVE=#
+
+$ESCCHAR=regex(\\\d{3}|\\x\p{XDigit}{2}|\\[ntvbrfa\\\?'"])
+
+$SYMBOLS= ( ) [ ] { } , ; . : & | < > !  = / *  %  + - ~
+
+$CONTINUATIONSYMBOL=\
+
+$REFORMATTING=true
